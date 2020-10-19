@@ -1,0 +1,111 @@
+/***********
+ *   top   *
+ ***********/
+#top {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/top_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#top_wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#top_menu {
+  padding-top: 2%;
+}
+
+#top_menu a {
+  margin: 0 2%;
+  color: rgb(255, 255, 255);
+}
+
+#top_title {
+  margin-top: 40vh;
+}
+
+#top_title h1 {
+  font-size: 5vw;
+}
+
+/****************
+ *   services   *
+ ****************/
+#services {
+  background-image: url("../img/services_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#services_wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.7);
+  /* footerを最下部に表示する指定 */
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+#services_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.services_items {
+  width: 30%;
+  height: 30vw;
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+/*************
+ *   items   *
+ *************/
+.items_wrap {
+  width: 80%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.items_right {
+  text-align: right;
+  margin-left: 20%;
+}
+
+.items_img {
+  width: 35%;
+}
+
+/**************
+ *   access   *
+ **************/
+#access_map {
+  width: 70%;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+#access_address {
+  width: 70%;
+  margin: 1% auto 0 auto;
+}
+
+/***************
+ *   contact   *
+ ***************/
+#contact_items {
+  margin: 2% 0;
+  display: flex;
+  font-size: 1.3vw;
+}
+
+#contact_items p:first-of-type {
+  width: 6%;
+}

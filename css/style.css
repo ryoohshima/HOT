@@ -33,6 +33,10 @@
 #top_title h1 {
   font-size: 5vw;
 }
+/***************
+ *   company   *
+ ***************/
+
 
 /****************
  *   services   *
@@ -57,12 +61,20 @@
   align-items: start;
 }
 .services_items {
-  width: 30%;
+  width: 28%;
   height: 30vw;
-  padding: 1%;
+  padding: 2%;
   background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+  border-radius: 10px;
 }
+.services_items h3 {
+  margin: 5% 0;
+}
+
+.services_items p {
+  margin-bottom: 3%;
+}
+
 
 /*************
  *   items   *

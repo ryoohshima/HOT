@@ -36,7 +36,43 @@
 /***************
  *   company   *
  ***************/
+#company_tab_wrap {
+  display: flex;
+}
 
+#company_tab_philosophy{
+  padding: 1% 2%;
+  border-top: 1px solid rgb(122, 122, 122);
+  border-right: 1px solid rgb(122, 122, 122);
+  border-left: 1px solid rgb(122, 122, 122);
+}
+
+#company_tab_about, #company_tab_history, #company_tab_overview{
+  padding: 1% 2%;
+  border-top: 1px solid rgb(122, 122, 122);
+  border-right: 1px solid rgb(122, 122, 122);
+}
+
+#company_contents {
+  width: 100%;
+  height: 50vh;
+  border: 1px solid rgb(122, 122, 122);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#company_contents_about, #company_contents_history, #company_contents_overview {
+  display: none;
+}
+
+#company_contents_philosophy p, #company_contents_about p {
+  margin-bottom: 5%;
+}
+
+#company_contents_history th, #company_contents_overview th, #company_contents_history td, #company_contents_overview td {
+  margin: 1% 2%;
+}
 
 /****************
  *   services   *

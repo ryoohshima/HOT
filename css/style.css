@@ -45,12 +45,14 @@
   border-top: 1px solid rgb(122, 122, 122);
   border-right: 1px solid rgb(122, 122, 122);
   border-left: 1px solid rgb(122, 122, 122);
+  cursor: pointer;
 }
 
 #company_tab_about, #company_tab_history, #company_tab_overview{
   padding: 1% 2%;
   border-top: 1px solid rgb(122, 122, 122);
   border-right: 1px solid rgb(122, 122, 122);
+  cursor: pointer;
 }
 
 #company_contents {
@@ -72,6 +74,12 @@
 
 #company_contents_history th, #company_contents_overview th, #company_contents_history td, #company_contents_overview td {
   margin: 1% 2%;
+}
+
+/* クリックされたタブの色が変わる */
+.active_tab {
+  background-color: rgb(122, 122, 122);
+  color: rgb(255, 255, 255);
 }
 
 /****************

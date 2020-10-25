@@ -1,3 +1,7 @@
+// *************
+// * component *
+// *************
+
 // header読み込み
 function header() {
   $.ajax({
@@ -5,7 +9,7 @@ function header() {
     cache: false,
     async: false,
     dataType: 'html',
-    success: function(html){
+    success: (html) => {
       document.write(html);
     }
   });
@@ -18,8 +22,10 @@ function footer() {
     cache: false,
     async: false,
     dataType: 'html',
-    success: function(html){
+    success: (html) => {
       document.write(html);
     }
   });
 }
+
+

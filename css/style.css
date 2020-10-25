@@ -1,3 +1,7 @@
+/************************************************************
+ *                             PC                           *
+ ************************************************************/
+
 /***********
  *   top   *
  ***********/
@@ -26,6 +30,11 @@
   color: rgb(255, 255, 255);
 }
 
+#top_menu a:hover {
+  color: rgb(186, 156, 123);
+  transition: all .5s ease-out;
+}
+
 #top_title {
   margin-top: 40vh;
 }
@@ -33,6 +42,7 @@
 #top_title h1 {
   font-size: 5vw;
 }
+
 /***************
  *   company   *
  ***************/
@@ -48,7 +58,9 @@
   cursor: pointer;
 }
 
-#company_tab_about, #company_tab_history, #company_tab_overview{
+#company_tab_about,
+#company_tab_history,
+#company_tab_overview {
   padding: 1% 2%;
   border-top: 1px solid rgb(122, 122, 122);
   border-right: 1px solid rgb(122, 122, 122);
@@ -57,29 +69,48 @@
 
 #company_contents {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   border: 1px solid rgb(122, 122, 122);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#company_contents_about, #company_contents_history, #company_contents_overview {
+#company_contents_about,
+#company_contents_history,
+#company_contents_overview {
   display: none;
 }
 
-#company_contents_philosophy p, #company_contents_about p {
+#company_contents_philosophy p,
+#company_contents_about p {
   margin-bottom: 5%;
+  text-align: center;
 }
 
-#company_contents_history th, #company_contents_overview th, #company_contents_history td, #company_contents_overview td {
-  margin: 1% 2%;
+#company_contents_history table,
+#company_contents_overview table {
+  width: 120%;
+}
+
+#company_contents_history th,
+#company_contents_overview th {
+  font-weight: normal;
+  text-align: left;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+#company_contents_history td,
+#company_contents_overview td {
+  padding: 1% 0 1% 1%;
+  border-bottom: 1px solid rgb(204, 204, 204);
 }
 
 /* クリックされたタブの色が変わる */
 .active_tab {
   background-color: rgb(122, 122, 122);
   color: rgb(255, 255, 255);
+  transition: all .5s ease-out;
 }
 
 /****************
@@ -116,7 +147,8 @@
 }
 
 .services_items p {
-  margin-bottom: 3%;
+  line-height: 200%;
+  margin-bottom: 5%;
 }
 
 
@@ -165,3 +197,45 @@
 #contact_items p:first-of-type {
   width: 6%;
 }
+
+
+/************************************************************
+ *                             SP                           *
+ ************************************************************/
+@media screen and (max-width: 767px) {
+  /***********
+   *   top   *
+   ***********/
+  #top_wrap {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #top_menu {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+  }
+
+  #top_menu a {
+    display: block;
+    margin: 10% 0;
+  }
+
+  #top_title h1 {
+    font-size: 10vw;
+  }
+
+  /* humberger menu */
+  .top_humberger {
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .top_humberger_inner div {
+    background-color: rgb(255, 255, 255);
+  }
+
+}
+

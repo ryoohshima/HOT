@@ -1,3 +1,7 @@
+/************************************************************
+ *                             PC                           *
+ ************************************************************/
+
 /***********
  *   all   *
  ***********/
@@ -10,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(230, 226, 223);
-  font-family: "ヒラギノ明朝 ProN", "serif";
+  font-family: "ヒラギノ明朝 ProN", "MS 明朝", serif;
   font-size: 1.1vw;
   color: rgb(59, 59, 59);
   /* footerを最下部に表示する指定 */
@@ -28,6 +32,12 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: rgb(186, 156, 123);
+  transition: all .5s ease-out;
+}
+
+
 /**************
  *   header   *
  **************/
@@ -44,12 +54,19 @@ header {
 }
 
 #header_menu {
-  width: 35%;
+  width: 50%;
+  text-align: right;
 }
 
 #header_menu a {
   margin: 0 2%;
 }
+
+/* humberger menu */
+#humberger {
+  display: none;
+}
+
 
 /************
  *   main   *
@@ -71,6 +88,7 @@ main {
   font-size: 2vw;
 }
 
+
 /**************
  *   footer   *
  **************/
@@ -78,4 +96,78 @@ footer {
   width: 100vw;
   text-align: center;
   font-size: 0.8vw;
+}
+
+
+/************************************************************
+ *                             SP                           *
+ ************************************************************/
+@media screen and (max-width: 767px) {
+  /***********
+   *   all   *
+   ***********/
+  body {
+    font-size: 4vw;
+  }
+
+  /**************
+   *   header   *
+   **************/
+  #header_menu {
+    width: unset;
+    height: 40vh;
+    display: none;
+    padding: 5%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(59, 59, 59, 0.8);
+  }
+
+  #header_menu a {
+    display: block;
+    margin: 20% 0;
+    color: rgb(255, 255, 255);
+  }
+
+  /* humberger menu */
+  .humberger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: transparent;
+    position: fixed;
+    right: 3%;
+    bottom: 2%;
+    transition: 0.5s;
+  }
+
+  .humberger_inner div {
+    width: 25px;
+    height: 1px;
+    background-color: rgb(59, 59, 59);
+    margin: 8px 0;
+    transition: all 1s ease-out;
+  }
+
+  .bar-1.open {
+    -webkit-transform: translateY(10px) rotate(-405deg);
+    transform: translateY(10px) rotate(-405deg);
+  }
+
+  .bar-2.open {
+    opacity: 0;
+    transform:translateX(100px);
+  }
+
+  .bar-3.open {
+    -webkit-transform: translateY(-8px) rotate(405deg);
+    transform: translateY(-8px) rotate(405deg);
+  }
+
+
 }

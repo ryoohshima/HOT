@@ -7,10 +7,11 @@ const top_menu = $("#top_menu");
 const menu = $("#header_menu");
 const icon = $(".humberger");
 const icon_inner_div = $(".humberger_inner div");
-const url =  location.pathname;
+const path = location.pathname;
+const file = path.split("/").slice(-1)[0];
 icon.on("click", () => {
     // top menu
-    if (url === "/index.html") {
+    if (url === "index.html") {
         if (top_menu.css("display") === "none") {
             top_menu.fadeIn().css("display", "inline-block");
             icon_inner_div.addClass("open");

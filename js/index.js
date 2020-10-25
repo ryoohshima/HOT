@@ -11,7 +11,7 @@ const path = location.pathname;
 const file = path.split("/").slice(-1)[0];
 icon.on("click", () => {
     // top menu
-    if (url === "index.html") {
+    if (file === "index.html") {
         if (top_menu.css("display") === "none") {
             top_menu.fadeIn().css("display", "inline-block");
             icon_inner_div.addClass("open");

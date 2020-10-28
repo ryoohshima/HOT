@@ -63,7 +63,7 @@ header {
 }
 
 /* humberger menu */
-#humberger {
+.humberger {
   display: none;
 }
 
@@ -113,6 +113,10 @@ footer {
   /**************
    *   header   *
    **************/
+  #header_title {
+    display: none;
+  }
+
   #header_menu {
     width: unset;
     height: 40vh;
@@ -169,5 +173,28 @@ footer {
     transform: translateY(-8px) rotate(405deg);
   }
 
+
+  /************
+   *   main   *
+   ************/
+  main {
+    padding: 10% 0;
+  }
+
+  #page_title {
+    margin-bottom: 10%;
+  }
+
+  #page_title h2 {
+    font-size: 5vw;
+  }
+
+
+  /**************
+   *   footer   *
+   **************/
+  footer {
+    font-size: 1vw;
+  }
 
 }

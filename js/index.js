@@ -4,14 +4,14 @@
 
 // メニューボタンのクリック
 const top_menu = $("#top_menu");
-const menu = $("#header_menu");
+const header_menu = $("#header_menu");
 const icon = $(".humberger");
 const icon_inner_div = $(".humberger_inner div");
 const path = location.pathname;
 const file = path.split("/").slice(-1)[0];
 icon.on("click", () => {
     // top menu
-    if (file === "index.html") {
+    if (file === "index.html" || !file) {
         if (top_menu.css("display") === "none") {
             top_menu.fadeIn().css("display", "inline-block");
             icon_inner_div.addClass("open");
@@ -21,13 +21,13 @@ icon.on("click", () => {
         }
     // menu
     } else {
-        if (menu.css("display") === "none") {
-            menu.fadeIn().css("display", "inline-block");
+        if (header_menu.css("display") === "none") {
+            header_menu.fadeIn().css("display", "inline-block");
             icon.css("border", "1px solid rgb(255, 255, 255)");
             icon_inner_div.css("background-color", "rgb(255, 255, 255)");
             icon_inner_div.addClass("open");
         } else {
-            menu.fadeOut();
+            header_menu.fadeOut();
             icon.css("border", "1px solid rgb(59, 59, 59)");
             icon_inner_div.css("background-color", "rgb(59, 59, 59)");
             icon_inner_div.removeClass("open");

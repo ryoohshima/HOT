@@ -50,6 +50,10 @@
   display: flex;
 }
 
+#company_pulldown_wrap {
+  display: none;
+}
+
 #company_tab_philosophy{
   padding: 1% 2%;
   border-top: 1px solid rgb(122, 122, 122);
@@ -105,6 +109,15 @@
   padding: 1% 0 1% 1%;
   border-bottom: 1px solid rgb(204, 204, 204);
 }
+
+#company_contents_sp {
+  display: none;
+}
+
+#company_contents_pc {
+  display: block;
+}
+
 
 /* クリックされたタブの色が変わる */
 .active_tab {
@@ -223,7 +236,7 @@
 
   #top_menu {
     display: none;
-    position: absolute;
+    position: fixed;
     bottom: 10%;
     right: 3%;
   }
@@ -251,36 +264,26 @@
    *   company   *
    ***************/
   #company_tab_wrap {
-    display: flex;
+    display: none;
   }
 
-  #company_tab_philosophy{
-    padding: 1% 2%;
-    border-top: 1px solid rgb(122, 122, 122);
-    border-right: 1px solid rgb(122, 122, 122);
-    border-left: 1px solid rgb(122, 122, 122);
-    cursor: pointer;
+  #company_pulldown_wrap {
+    display: block;
   }
 
-  #company_tab_about,
-  #company_tab_history,
-  #company_tab_overview {
-    padding: 1% 2%;
-    border-top: 1px solid rgb(122, 122, 122);
-    border-right: 1px solid rgb(122, 122, 122);
-    cursor: pointer;
+  #company_pulldown_wrap select {
+    border: none;
+    background-color: rgb(230, 226, 223);
+    font-size: 4vw;
+    color: rgb(59, 59, 59);
+    padding: 2% 1%;
+    outline: none;
   }
 
   #company_contents {
     width: 92%;
     height: 70vh;
     padding: 4%;
-  }
-
-  #company_contents_about,
-  #company_contents_history,
-  #company_contents_overview {
-    display: none;
   }
 
   #company_contents_philosophy p,
@@ -296,14 +299,37 @@
 
   #company_contents_history th,
   #company_contents_overview th {
-    width: 20%;
     font-size: 3.5vw;
+  }
+
+  #company_contents_history th {
+    width: 15%;
+  }
+
+  #company_contents_overview th {
+    width: 25%;
+  }
+
+  #company_contents_sp {
+    display: block;
+  }
+
+  #company_contents_pc {
+    display: none;
   }
 
 
   /****************
    *   services   *
    ****************/
+  #services {
+    background-repeat: repeat;
+  }
+
+  #services_wrap {
+    height: 100%;
+  }
+
   #services_inner {
     display: block;
     justify-content: unset;

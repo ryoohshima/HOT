@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(230, 226, 223);
-  font-family: "ヒラギノ明朝 ProN", "MS 明朝", serif;
+  font-family: "ヒラギノ明朝 ProN", "MS 明朝", "Noto Serif JP", serif;
   font-size: 1.1vw;
   color: rgb(59, 59, 59);
   /* footerを最下部に表示する指定 */
@@ -122,7 +122,7 @@ footer {
     height: 40vh;
     display: none;
     padding: 5%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     background-color: rgba(59, 59, 59, 0.8);
